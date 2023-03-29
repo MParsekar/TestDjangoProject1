@@ -1,0 +1,60 @@
+from django.db import models
+
+class Sprameterdata(models.Model):
+    decimalPlace = 30
+    maxDigit=40
+
+    z01=models.DecimalField(decimal_places=decimalPlace, max_digits=maxDigit)
+    z02=models.DecimalField(decimal_places=decimalPlace, max_digits=maxDigit)
+    l=models.DecimalField(decimal_places=decimalPlace, max_digits=maxDigit)
+    f=models.DecimalField(decimal_places=decimalPlace, max_digits=maxDigit)
+    r=models.DecimalField(decimal_places=decimalPlace, max_digits=maxDigit)
+    lt=models.DecimalField(decimal_places=decimalPlace, max_digits=maxDigit)
+    g=models.DecimalField(decimal_places=decimalPlace, max_digits=maxDigit)
+    c=models.DecimalField(decimal_places=decimalPlace, max_digits=maxDigit)
+    rodd=models.DecimalField(decimal_places=decimalPlace, max_digits=maxDigit)
+    lodd=models.DecimalField(decimal_places=decimalPlace, max_digits=maxDigit)
+    godd=models.DecimalField(decimal_places=decimalPlace, max_digits=maxDigit)
+    codd=models.DecimalField(decimal_places=decimalPlace, max_digits=maxDigit)
+    reven=models.DecimalField(decimal_places=decimalPlace, max_digits=maxDigit)
+    leven=models.DecimalField(decimal_places=decimalPlace, max_digits=maxDigit)
+    geven=models.DecimalField(decimal_places=decimalPlace, max_digits=maxDigit)
+    ceven=models.DecimalField(decimal_places=decimalPlace, max_digits=maxDigit)
+    s11=models.TextField(blank=True)
+    s12=models.TextField(blank=True)
+    s13=models.TextField(blank=True)
+    s14=models.TextField(blank=True)
+    s21=models.TextField(blank=True)
+    s22=models.TextField(blank=True)
+    s23=models.TextField(blank=True)
+    s24=models.TextField(blank=True)
+    s31=models.TextField(blank=True)
+    s32=models.TextField(blank=True)
+    s33=models.TextField(blank=True)
+    s34=models.TextField(blank=True)
+    s41=models.TextField(blank=True)
+    s42=models.TextField(blank=True)
+    s43=models.TextField(blank=True)
+    s44=models.TextField(blank=True)
+    sdd11=models.TextField(blank=True)
+    sdd12=models.TextField(blank=True)
+    sdd21=models.TextField(blank=True)
+    sdd22=models.TextField(blank=True)
+    sdc11=models.TextField(blank=True)
+    sdc12=models.TextField(blank=True)
+    sdc21=models.TextField(blank=True)
+    sdc22=models.TextField(blank=True)
+    scd11=models.TextField(blank=True)
+    scd12=models.TextField(blank=True)
+    scd21=models.TextField(blank=True)
+    scd22=models.TextField(blank=True)
+    scc11=models.TextField(blank=True)
+    scc12=models.TextField(blank=True)
+    scc21=models.TextField(blank=True)
+    scc22=models.TextField(blank=True)
+    issingleended = models.BooleanField()
+    class Meta:
+        verbose_name_plural = "Sprameterdata"
+
+    def __str__(self):
+        return f'{self.l}'
