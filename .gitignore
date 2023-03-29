@@ -1,5 +1,5 @@
 /ssdcDjango/venv
 .env
 **/__pycache__/
-!ssdcDjango/ssdcDjangoProject/sparameter/__pycache__/*.pyc
+
 /venv

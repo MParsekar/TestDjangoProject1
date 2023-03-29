@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django_extensions', #Great packaged to access abstract models
     'django_filters', #Used with DRF
     'rest_framework', #DRF package
-    'sparameter', # New app
 ]
 
 MIDDLEWARE = [
